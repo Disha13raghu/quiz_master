@@ -896,7 +896,7 @@ class admin_dash(Resource) :
 
 # RESOURCES 
 api.add_resource(Subjects,"/api/sub/get","/api/sub/create","/api/sub/update/<int:subject_id>","/api/sub/delete/<int:subject_id>")
-api.add_resource(chapters,"/api/ch/get/<int:subject_id>","/api/ch/create/<int:subject_id>","/api/ch/update/<int:ch_id>","/api/ch/delete/<int:ch_id>")
+#
 api.add_resource(quiz,"/api/quiz/get/<int:ch_id>","/api/quiz/create/<int:ch_id>","/api/quiz/update/<int:quiz_id>","/api/quiz/delete/<int:quiz_id>")
 api.add_resource(quizbystudent,"/api/quizbys/get/<int:s_id>","/api/quizbys/get")
 api.add_resource(single_quiz,"/api/squiz/get/<int:id>")
